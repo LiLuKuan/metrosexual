@@ -1,0 +1,22 @@
+footer{
+    display: inline-block;
+    width: 100%;
+    padding:10px 0;
+    text-align: center;
+    background: #000000;
+
+    .copyright{
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 5px;
+        color: #ffffff;
+
+        a{
+            display: block;
+            padding:0 15px;
+        }
+    }
+}

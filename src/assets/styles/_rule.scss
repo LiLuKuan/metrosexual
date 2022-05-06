@@ -1,0 +1,407 @@
+.rulebox{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    background: #E2E0FA;
+
+    .outbox{
+        display: inline-block;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 30px;
+        overflow: hidden;
+
+        .outbg{
+            display: inline-block;
+            width: 100%;
+            background-image:url(/assets/images/register-bg.svg);
+            background-position: center center;
+            background-repeat: repeat;
+            background-size: cover;
+        }
+    }
+    .insidebox{
+        text-align: center;
+        margin:0 auto;
+        padding: 100px 0;
+        position: relative;
+        z-index: 2000;
+        &.top{
+            padding:100px 0 0;
+        }
+        &.bottom{
+            padding:0 0 100px;
+        }
+        
+        .maintext{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            margin:0 0 70px;
+
+            span{
+                color:#403584;
+                font-size: 42px;
+                line-height: 42px;
+                position: relative;
+                z-index: 2000;
+            }
+            .vrbox{
+                position: absolute;
+                bottom: -20%;
+                left:0;
+                width: 100%;
+                z-index: 1000;
+
+                .vrline{
+                    display: block;
+                    width: 212px;
+                    height: 23px;
+                    background: #D0CFFA;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .stepbox{
+            display: inline-block;
+            width: 100%;
+            margin: 0 0 70px;
+
+            ul{
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+
+                li{
+                    -ms-flex: 0 0 14.285%;
+                    flex:0 0 14.285%;
+                    max-width: 14.285%;
+
+                    .box{
+                        position: relative;
+                        display: inline-flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        padding: 50px 0 0;
+
+                        .step{
+                            position: absolute;
+                            left:-4%;
+                            top:-3%;    
+                        }
+                        .stepimg{
+                            display: inline-block;
+                            width: 100%;
+                            margin: 0 0 10px;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .steptext{
+                            span{
+                                display: inline-block;
+                                width: 100%;
+                                font-size: 20px;
+                                color:#260954;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .vrbox{
+                        .vrline{
+                            display: block;
+                            width: 150%;
+                            height: 10px;
+                            background: #443992;
+                            margin: 0 0 0 -25%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .noticebox{
+            .tagbox{
+                border:3px solid #9FFAF7;
+                background: #090D60;
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 55%;
+                padding: 20px 15px;
+
+                .tagtext{
+                    -ms-flex:0 0 50%;
+                    flex:0 0 50%;
+                    max-width: 50%;
+                    text-align: center;
+
+                    span{
+                        display: inline-block;
+                        vertical-align: middle;
+                        color:#9FFAF7;
+                        font-size: 18px;
+                        padding: 0 0 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .rulebox{
+        .insidebox{
+            .stepbox{
+                ul{    
+                    li{
+                        .box{
+                            .steptext{
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .noticebox{
+                .tagbox{    
+                    .tagtext{
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .rulebox{
+        padding: 15px;
+        .outbox{
+            border-radius: 15px;
+        }
+        .insidebox{
+            padding: 30px 0 50px;
+            &.top{
+                padding: 30px 0 10px;
+            }
+            &.bottom{
+                padding: 10px 0 50px;
+            }
+            
+            .maintext{
+                margin:0 0 30px;
+                span{
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                .vrbox{
+                    .vrline{
+                        width: 160px;
+                        height: 17px;
+                    }
+                }
+            }
+
+            .stepbox{
+                padding: 0 30px;
+                margin:0 0 15px;
+
+                ul{    
+                    li{
+                        &:nth-child(odd){
+                            -ms-flex: 0 0 17.5%;
+                            flex: 0 0 17.5%;
+                            max-width: 17.5%;
+                        }
+                        &:nth-child(even){
+                            -ms-flex: 0 0 10%;
+                            flex: 0 0 10%;
+                            max-width: 10%;
+                        }
+
+                        .box{
+                            padding: 30px 0 0;
+    
+                            .step{
+                                position: absolute;
+                                left:-6%;
+                                top:-4%;
+                                width: 30px;
+                                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .steptext{
+                                display: inline-block;
+                                height:75px;
+
+                                span{
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+    
+                        .vrbox{
+                            .vrline{
+                                margin: -35% 0 0 -25%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .noticebox{
+                .tagbox{
+                    padding:15px 10px;
+                    width: 350px;
+
+                    .tagtext{
+                        -ms-flex:0 0 100%;
+                        flex:0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .rulebox{
+        .insidebox{
+            .stepbox{
+                ul{    
+                    li{
+                        &:nth-child(odd){
+                            -ms-flex: 0 0 17.5%;
+                            flex: 0 0 17.5%;
+                            max-width: 17.5%;
+                        }
+                        &:nth-child(even){
+                            -ms-flex: 0 0 10%;
+                            flex: 0 0 10%;
+                            max-width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rulebox{
+        .insidebox{
+            &.top{
+                padding: 30px 10px 0 30px;
+            }
+            &.bottom{
+                padding: 30px 15px 50px;
+            }
+            .stepbox{
+                padding: 0 0 0 50px;
+
+                ul{
+                    position: relative;
+                    li{
+                        position: relative;
+                        &:nth-child(odd){
+                            -ms-flex: 0 0 100%;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            z-index: 2000;
+                        }
+                        &:nth-child(even){
+                            -ms-flex: 0 0 100%;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            z-index: 1000;
+                        }
+
+                        &:first-child{
+                            .box{
+                                padding:30px 0 0 0;
+                            }
+                        }
+
+                        .box{
+                            width: 100%;
+
+                            .step{
+                                left: -50px;
+                                top:53px;
+                                width:40px;
+                            }
+                            .stepimg{
+                                width: 40%;
+                            }
+                            .steptext{
+                                text-align: left;
+                                width: 60%;
+                                height:auto;
+                                padding:0 0 0 10px;
+
+                                span{
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+
+                        .vrbox{
+                            .vrline{
+                                position: absolute;
+                                margin: -75px auto 0 18.5%;
+                                width: 10px;
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .rulebox{
+        .insidebox{
+            .stepbox{
+
+                ul{
+                    li{
+
+                        .box{
+                            .steptext{
+                                span{
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .noticebox{
+                .tagbox{
+                    width: 100%;
+                }
+            }
+        }   
+    }
+}

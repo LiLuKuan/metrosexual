@@ -1,0 +1,44 @@
+.page_404{
+  padding:40px 0;
+  background:#fff;
+  font-family: Microsoft JhengHei;
+
+  img{
+    width:100%;
+  }
+}
+.four_zero_four_bg{
+  text-align: center;
+
+  span{
+    font-size:80px;
+    font-family: Microsoft JhengHei;
+  }
+}
+.contant_box_404{
+  margin-top:0;
+  text-align: center;
+
+  span,p{
+    font-size: 18px;
+    font-family: Microsoft JhengHei;
+  }
+
+  a{
+    display: inline-block;
+    font-size: 16px;
+    font-family: Microsoft JhengHei;
+    text-decoration: none;
+    color: #ffffff;
+    background: #cd0505;
+    border:1px solid #cd0505;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 3px;
+
+    &:hover{
+      background: #ffffff;
+      color:#cd0505;
+    }
+  }
+}

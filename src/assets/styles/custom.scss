@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', Microsoft JhengHei, sans-serif;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    
+    li{
+        list-style: none;
+    }
+}
+img{
+    image-rendering: -webkit-optimize-contrast;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    vertical-align: middle;
+}
+.container-custom,.container-form {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 0;
+}
+@media (min-width: 768px) {
+    .container-custom,.container-form {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container-custom,.container-form {
+        max-width: 960px;
+        padding:0 12px 0;
+    }
+}
+@media (min-width: 1200px) {
+    .container-custom,.container-form {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container-custom {
+        max-width: 1320px;
+        padding:0 12px 0;
+    }
+}
+
+::placeholder {
+    color: #949498;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #949498;
+}
+
+::-ms-input-placeholder {
+    color: #949498;
+}
+
+.swal2-shown .swal2-container{
+    z-index: 10000;
+}
+.form-control{
+    color:#949498;
+}
+
+@import 'notfound';
+@import 'index';
+@import 'slider';
+@import 'intro';
+@import 'rule';
+@import 'signup';
+@import 'method';
+@import 'footer';
+@import 'fixicon';
+@import 'loader';

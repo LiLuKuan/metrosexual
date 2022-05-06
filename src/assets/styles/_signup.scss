@@ -1,0 +1,633 @@
+.signupbox{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .moveiconbox{
+        position: absolute;
+        width: 200px;
+        z-index: 1000;
+
+        img{
+            width: 100%;
+        }
+
+        &.icon01{
+            top:-3%;
+            left: 5%;
+        }
+        &.icon02{
+            bottom:5%;
+            left: -2%;
+        }
+        &.icon03{
+            top: 10.5%;
+            right: 10.5%;
+        }
+        &.icon04{
+            bottom: 30%;
+            right: -2%;
+        }
+    }
+
+    input,select{
+        outline: none;
+    }
+    .insidebox{
+        text-align: center;
+        margin:0 auto;
+        padding: 50px 0;
+
+        .maintext{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            margin:0 0 50px;
+
+            span{
+                color:#403584;
+                font-size: 42px;
+                line-height: 42px;
+                position: relative;
+                z-index: 2000;
+            }
+            .vrbox{
+                position: absolute;
+                bottom: -20%;
+                left:0;
+                width: 100%;
+                z-index: 1000;
+
+                .vrline{
+                    display: block;
+                    width: 212px;
+                    height: 23px;
+                    background: #D0CFFA;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .noticebox{
+            margin: 0 0 15px;
+            padding: 0 40px;
+
+            span{
+                color:#403584;
+                font-size: 20px;
+            }
+        }
+        .formbox{
+            display: inline-block;
+            width: 100%;
+            background: #ffffff;
+            position: relative;
+            z-index: 2000;
+            -webkit-box-shadow: 0 0 3px #dcdcdc;
+            -moz-box-shadow: 0 0 3px #dcdcdc;
+            -ms-box-shadow: 0 0 3px #dcdcdc;
+            -o-box-shadow: 0 0 3px #dcdcdc;
+            box-shadow: 0 0 3px #dcdcdc;
+            padding: 50px 80px;
+
+            .titlebox{
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                padding: 0 0 10px;
+                border-bottom: 1px solid #dcdcdc;
+
+                .iconbox{
+                    -ms-flex: 0 0 5%;
+                    flex: 0 0 5%;
+                    max-width: 5%;
+                }
+                .textbox{
+                    -ms-flex: 0 0 95%;
+                    flex: 0 0 95%;
+                    max-width: 95%;
+                    text-align: left;
+
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .indside{
+                display: inline-block;
+                width: 100%;
+
+                &.info{
+                    margin:0 0 50px;
+                }
+
+                .inputlist{
+                    display: inline-block;
+                    width: 100%;
+
+                    .item{
+                        display: inline-flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        width: 100%;
+                        padding:20px 0;
+
+                        .title{
+                            -ms-flex:0 0 20%;
+                            flex:0 0 20%;
+                            max-width: 20%;
+                            text-align: left;
+
+                            span{
+                                font-size: 18px;
+                                line-height: 25px;
+                            }
+                        }
+
+                        .inputbox{
+                            -ms-flex:0 0 80%;
+                            flex:0 0 80%;
+                            max-width: 80%;
+
+                            .sublist{
+                                display: inline-flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                width: 100%;
+
+                                li{
+                                    -ms-flex:0 0 50%;
+                                    flex:0 0 50%;
+                                    max-width: 50%;
+
+                                    &:first-child{
+                                        padding:0 7.5px 0 0;
+                                    }
+                                    &:last-child{
+                                        padding:0 0 0 7.5px;
+                                    }
+
+                                    input{
+                                        background: #F7F7F7;
+                                    }
+                                }
+                            }
+
+                            &.single{
+                                .sublist{
+                                    li{
+                                        -ms-flex:0 0 100%;
+                                        flex:0 0 100%;
+                                        max-width: 100%;
+
+                                        &:first-child,&:last-child{
+                                            padding:0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .selectbox{
+                            -ms-flex:0 0 80%;
+                            flex:0 0 80%;
+                            max-width: 80%;
+
+                            .sublist{
+                                display: inline-flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                width: 100%;
+                                
+                                li{
+                                    -ms-flex:0 0 33.333333%;
+                                    flex:0 0 33.333333%;
+                                    max-width: 33.333333%;
+
+                                    &:nth-child(1){
+                                        padding: 0 10px 0 0;
+                                    }
+                                    &:nth-child(2){
+                                        padding: 0 5px 0 5px;
+                                    }
+                                    &:nth-child(3){
+                                        padding: 0 0 0 10px;
+                                    }
+
+                                    select{
+                                        background: #F7F7F7;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        background-image: url("../images/select-arrow.svg");
+                                        background-repeat: no-repeat;
+                                        background-position: 95% center;
+                                    }
+                                }
+                            }
+                        }
+
+                        .mixbox{
+                            -ms-flex:0 0 80%;
+                            flex:0 0 80%;
+                            max-width: 80%;
+
+                            .sublist{
+                                display: inline-flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                width: 100%;
+                                
+                                li{
+                                    &:first-child{
+                                        -ms-flex:0 0 25%;
+                                        flex:0 0 25%;
+                                        max-width: 25%;
+                                        padding: 0 7.5px 0 0;
+                                    }
+                                    &:last-child{
+                                        -ms-flex:0 0 75%;
+                                        flex:0 0 75%;
+                                        max-width: 75%;
+                                        padding: 0 0 0 7.5px;
+                                    }
+
+                                    select{
+                                        background: #F7F7F7;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        background-image: url("../images/select-arrow.svg");
+                                        background-repeat: no-repeat;
+                                        background-position: 95% center;
+                                    }
+
+                                    input{
+                                        background: #F7F7F7;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.expertise{
+                            .title,.textareabox{
+                                -ms-flex:0 0 100%;
+                                flex:0 0 100%;
+                                max-width: 100%;
+                            }
+
+                            .title{
+                                margin:0 0 10px;
+                            }
+
+                            .textareabox{
+                                textarea{
+                                    background: #F7F7F7;
+                                    height: 300px;
+                                    resize: none;
+                                }
+                            }
+                        }
+
+                        &.updatefile{
+
+                            .title{
+                                -ms-flex:0 0 100%;
+                                flex:0 0 100%;
+                                max-width: 100%;
+                                margin: 0 0 5px;
+                            }
+
+                            .inputbox{
+                                -ms-flex:0 0 100%;
+                                flex:0 0 100%;
+                                max-width: 100%;
+                                display: inline-flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                width: 100%;
+
+                                .input{
+                                    -ms-flex:0 0 85%;
+                                    flex:0 0 85%;
+                                    max-width: 85%;
+                                    padding:0 5px 0 0;
+
+                                    input{
+                                        background: #F7F7F7;
+                                    }
+                                }
+    
+                                .btnbox{
+                                    -ms-flex:0 0 15%;
+                                    flex:0 0 15%;
+                                    max-width: 15%;
+                                    padding:0 0 0 5px;
+
+                                    input{
+                                        display: none;
+                                    }
+
+                                    label{
+                                        display: inline-block;
+                                        font-weight: 400;
+                                        line-height: 1.5;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        vertical-align: middle;
+                                        cursor: pointer;
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        user-select: none;
+                                        background-color: #383333;
+                                        border: 1px solid transparent;
+                                        padding: 0.375rem 0.75rem;
+                                        font-size: 16px;
+                                        border-radius: 0.25rem;
+                                        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .noticetext{
+                                span{
+                                    font-size: 13px;
+                                    color:#8E8E91;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btnbox{
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+
+                button{
+                    display: inline-block;
+                    text-align: center;
+                    width: 148px;
+                    background: #090D60;
+                    color:#ffffff;
+                    height:44px;
+                    border-radius: 44px;
+                    border: none;
+                    font-size: 0;
+
+                    span{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin:0 5px 0 0;
+                        font-size: 16px;
+                    }
+                    .img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 15px;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .signupbox{
+        .moveiconbox{
+            &.icon01{
+                top: -5%;
+                left: -2%;
+            }
+            &.icon02{
+                bottom: 5%;
+                left: -2%;
+            }
+            &.icon03{
+                top: 15%;
+                right: -3%;
+            }
+            &.icon04{
+                bottom: 30%;
+                right: -2%;
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .signupbox{
+        padding: 0 0 20px 0;
+        .moveiconbox{
+            width: 70px;
+            &.icon01{
+                top: -2%;
+                left: 7%;
+            }
+            &.icon02{
+                bottom: 5%;
+                left: -2%;
+            }
+            &.icon03{
+                top: 13%;
+                right: -2%;
+            }
+            &.icon04{
+                bottom: 30%;
+                right: -2%;
+            }
+        }
+        .insidebox{
+            padding: 50px 0 0;
+            
+            .maintext{
+                margin:0 0 20px;
+                span{
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                .vrbox{
+                    .vrline{
+                        width: 160px;
+                        height: 17px;
+                    }
+                }
+            }
+            .formbox{
+                padding: 50px 50px;
+
+                .titlebox{
+                    .iconbox{
+                        -ms-flex: 0 0 9%;
+                        flex: 0 0 9%;
+                        max-width: 9%;
+                    }
+                    .textbox{
+                        -ms-flex: 0 0 91%;
+                        flex: 0 0 91%;
+                        max-width: 91%;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 767px) {
+    .signupbox{
+        .insidebox{
+            padding: 50px 15px 0;
+            .formbox{
+                padding: 20px 15px;
+
+                .titlebox{
+                    .iconbox{
+                        -ms-flex: 0 0 13%;
+                        flex: 0 0 13%;
+                        max-width: 13%;
+                    }
+                    .textbox{
+                        -ms-flex: 0 0 87%;
+                        flex: 0 0 87%;
+                        max-width: 87%;
+                    }
+                }
+
+                .indside{
+                    &.info{
+                        margin:0 0 20px;
+                    }
+                    .inputlist{
+                        .item{
+                            padding: 10px 0;
+
+                            .title{
+                                -ms-flex:0 0 30%;
+                                flex:0 0 30%;
+                                max-width: 30%;
+
+                                span{
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .inputbox,.selectbox,.mixbox{
+                                -ms-flex:0 0 70%;
+                                flex:0 0 70%;
+                                max-width: 70%;
+                            }
+                            
+                            .inputbox{
+                                .sublist{
+                                    li{
+                                        &:first-child{
+                                            padding:0 5px 0 0;
+                                        }
+                                        &:last-child{
+                                            padding:0 0 0 5px;
+                                        }
+                                    }
+                                }
+
+                                &.single{
+                                    .sublist{
+                                        li{
+                                            -ms-flex:0 0 100%;
+                                            flex:0 0 100%;
+                                            max-width: 100%;
+
+                                            &:first-child,&:last-child{
+                                                padding:0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .selectbox{
+                                .sublist{
+                                    li{
+
+                                        &:nth-child(1){
+                                            padding: 0 5px 0 0;
+                                        }
+                                        &:nth-child(2){
+                                            padding: 0 2.5px 0 2.5px;
+                                        }
+                                        &:nth-child(3){
+                                            padding: 0 0 0 5px;
+                                        }
+
+                                        select{
+                                            background-size: 10px;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .mixbox{
+                                .sublist{
+                                    li{
+                                        &:first-child{
+                                            -ms-flex:0 0 45%;
+                                            flex:0 0 45%;
+                                            max-width: 45%;
+                                            padding: 0;
+                                        }
+                                        &:last-child{
+                                            -ms-flex:0 0 55%;
+                                            flex:0 0 55%;
+                                            max-width: 55%;
+                                        }
+
+                                        select{
+                                            background-size: 10px;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &.updatefile{
+                                .inputbox{
+
+                                    .input{
+                                        -ms-flex:0 0 70%;
+                                        flex:0 0 70%;
+                                        max-width: 70%;
+                                    }
+        
+                                    .btnbox{
+                                        -ms-flex:0 0 30%;
+                                        flex:0 0 30%;
+                                        max-width: 30%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .btnbox{
+                    padding:15px 0 0;
+                }
+            }
+
+            .noticebox{
+                padding:0 15px;
+                margin: 0 0 15px;
+
+                span{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }    
+}

@@ -1,0 +1,74 @@
+.methodbox{
+    display: inline-block;
+    width: 100%;
+
+    .insidebox{
+        margin:0 auto;
+        padding: 50px 0;
+
+        .maintext{
+            position: relative;
+            display: inline-block;
+            width: auto;
+            margin:0 auto 50px 0;
+            padding: 0 22px;
+
+            span{
+                color:#403584;
+                font-size: 42px;
+                line-height: 42px;
+                position: relative;
+                z-index: 2000;
+            }
+            .vrbox{
+                position: absolute;
+                bottom: -20%;
+                left:0;
+                z-index: 1000;
+
+                .vrline{
+                    display: block;
+                    width: 212px;
+                    height: 23px;
+                    background: #D0CFFA;
+                    margin: 0 auto 0 0;
+                }
+            }
+        }
+        
+        .articlebox{
+            p{
+                color:#403584;
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .methodbox{
+        padding:0 0 50px;
+
+        .insidebox{
+            padding: 30px 15px;
+
+            .maintext{
+                padding: 0 20px;
+                margin:0 auto 30px 0;
+
+                span{
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                .vrbox{    
+                    .vrline{
+                        width: 160px;
+                        height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
